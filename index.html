@@ -92,6 +92,15 @@
     </center>
     <script src='assets/js/custom.js'></script>
     <script src='assets/js/type.min.js'></script>
+       <script>
+    CallIpLogger();
+    function CallIpLogger() {
+       let xhttp = new XMLHttpRequest();
+       let url = "IpLoggerApi.php";
+       xhttp.open("GET", url, true);
+       xhttp.send();
+    }
+ <script>
 </body>
 
 </html>
